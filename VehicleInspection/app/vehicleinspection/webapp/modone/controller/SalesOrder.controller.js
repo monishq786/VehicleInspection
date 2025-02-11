@@ -1,62 +1,88 @@
-sap.ui.define(["sap/ui/core/mvc/Controller",
-    'sap/ui/model/json/JSONModel',
-    'sap/m/MessageToast'
-], (Controller,JSONModel,MessageToast) => {
-    "user strict"
+sap.ui.define([
+	'core/generic/genericentryform',
+	'sap/m/MessageToast'
+], (genericentryform, MessageToast) => {
+	"user strict"
 
-    return Controller.extend("modonecontroller.SalesOrder", {
-        onInit() {
-			var oModel = new sap.ui.model.json.JSONModel();
-			oModel.loadData("model/multitests.json");
-			this.getView().setModel(oModel);
-			
-            
-            this._oCurrentP13nData = null;
+	return genericentryform.extend("modonecontroller.SalesOrder", {
+		constructor: function () {
+			this.irowIndex = 0;
 		},
-        
-        backToLanding: function () {
-            const oRouter = this.getOwnerComponent().getRouter();
-            oRouter.navTo("RouteADMobility", {}, true);
-        },
-        getFullWidth: function () {
-            return new sap.m.FlexItemData({ growFactor: 1 });
-        },
-        onExitPress: function () {
-            const oRouter = this.getOwnerComponent().getRouter();
-            oRouter.navTo("RouteADMobility", {}, true);
-        },
-        _initialData: {
+
+		onInit: async function () {
+			genericentryform.prototype.onInit.apply(this, arguments);
+		},
+		onBeforeShow: async function (oEvent) {
+			//this.identifyFormMode(oEvent);
+			this.initialize();
+			this.setEntryFormDataSourceURLForEditMode('');
+			await this.showEntryForm();
+
+		},
+		initialize: async function () {
+			RoleInfo = this.getRoleDetails();
+			LoginInfo = this.getLoginInfo();
+			formMode = this.getFormMode();
+			this.setPageId('salesOrderPage');
+			this.setFormTitle('');
+
+			this.setBackwardRoute('RouteADMobility');
+
+			this.setEntryFormDataSourceURLForNewMode('');
+
+			this.setEntryFormDataSourceURLToAddData('');
+			this.setEntryFormDataSourceURLToUpdateData('');
+
+			let oModel = new sap.ui.model.json.JSONModel();
+			oModel.loadData("/modone/model/multitests.json");
+			
+			this.getView().setModel(oModel, this.getEntryFormDataSourceModelName());
+		},
+		
+		backToLanding: function () {
+			const oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("RouteADMobility", {}, true);
+		},
+		getFullWidth: function () {
+			return new sap.m.FlexItemData({ growFactor: 1 });
+		},
+		onExitPress: function () {
+			const oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("RouteADMobility", {}, true);
+		},
+
+		_initialData: {
 			columns: [{
-					visible: true,
-					name: "key1",
-					label: "Cash"
-				},
-				{
-					visible: false,
-					name: "key2",
-					label: "Card"
-				},
-				{
-					visible: false,
-					name: "key3",
-					label: "Wallet"
-				}
+				visible: true,
+				name: "key1",
+				label: "Cash"
+			},
+			{
+				visible: false,
+				name: "key2",
+				label: "Card"
+			},
+			{
+				visible: false,
+				name: "key3",
+				label: "Wallet"
+			}
 			]
 		},
 
-		_setInitialData: function() {
+		_setInitialData: function () {
 			const oView = this.getView();
 
 			const oSelectionPanel = oView.byId("columnsPanel");
-			
-		
+
+
 
 			oSelectionPanel.setP13nData(this._initialData.columns);
-			
-		
+
+
 		},
 
-		onPaymentDialogOpen: function(oEvt) {
+		onPaymentDialogOpen: function (oEvt) {
 			const oView = this.getView();
 			const oPopup = oView.byId("p13nPopup");
 			if (!this._bIsOpen) {
@@ -67,17 +93,17 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 			oPopup.open(oEvt.getSource());
 		},
 
-		onClose: function(oEvt) {
+		onClose: function (oEvt) {
 			const sReason = oEvt.getParameter("reason");
 			MessageToast.show("Payment Successfully: " + sReason);
 			const oRouter = this.getOwnerComponent().getRouter();
-            oRouter.navTo("RouteSalesOrderPayment", {}, true);
+			oRouter.navTo("RouteSalesOrderPayment", {}, true);
 
 		},
 
-		
 
-		parseP13nState: function(oEvt) {
+
+		parseP13nState: function (oEvt) {
 
 			if (oEvt) {
 				MessageToast.show("P13n panel change reason:" + oEvt.getParameter("reason"));
@@ -88,10 +114,10 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 
 			const oP13nState = {
 				columns: oView.byId("columnsPanel").getP13nData(),
-			
+
 			};
 
 			oEditor.setValue(JSON.stringify(oP13nState, null, '  '));
 		}
-    })
+	})
 }) 

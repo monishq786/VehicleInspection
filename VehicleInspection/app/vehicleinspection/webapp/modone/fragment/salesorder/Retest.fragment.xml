@@ -5,7 +5,7 @@
     <HBox>
         <VBox width="100%">
             <Table id="idreTestTable" mode="MultiSelect" inset="false" items="{
-                path: '/ReTest',
+                path: 'EntryFormDataSourceModel>/ReTest',
                 sorter: [{ path: 'pinned', descending: true }],
                 groupHeaderFactory: '.getGroupHeader'
                  }">
@@ -35,14 +35,14 @@
 
                         <cells>
                             <!-- Title -->
-                            <Text text="{ReTestNo}" />
-                            <ObjectIdentifier title="{title}" />
+                            <Text text="{EntryFormDataSourceModel>ReTestNo}" />
+                            <ObjectIdentifier title="{EntryFormDataSourceModel>title}" />
 
                             <!-- Description -->
-                            <Text text="{desc}" />
+                            <Text text="{EntryFormDataSourceModel>desc}" />
 
                             <!-- Info -->
-                            <ObjectNumber number="{info}" />
+                            <ObjectNumber number="{EntryFormDataSourceModel>info}" />
                         </cells>
                     </ColumnListItem>
                 </items>

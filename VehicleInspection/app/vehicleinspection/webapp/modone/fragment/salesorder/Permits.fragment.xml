@@ -5,7 +5,7 @@
     <HBox>
         <VBox width="100%">
             <Table id="idPermitTable" mode="MultiSelect" inset="false" items="{
-                path: '/Permits',
+                path: 'EntryFormDataSourceModel>/Permits',
                 sorter: [{ path: 'pinned', descending: true }],
                 groupHeaderFactory: '.getGroupHeader'
                  }">
@@ -36,13 +36,13 @@
                         <cells>
                             <!-- Title -->
                             <Text text="{permitNo}" />
-                            <ObjectIdentifier title="{title}" />
+                            <ObjectIdentifier title="{EntryFormDataSourceModel>title}" />
 
                             <!-- Description -->
-                            <Text text="{desc}" />
+                            <Text text="{EntryFormDataSourceModel>desc}" />
 
                             <!-- Info -->
-                            <ObjectNumber number="{info}" />
+                            <ObjectNumber number="{EntryFormDataSourceModel>info}" />
                         </cells>
                     </ColumnListItem>
                 </items>

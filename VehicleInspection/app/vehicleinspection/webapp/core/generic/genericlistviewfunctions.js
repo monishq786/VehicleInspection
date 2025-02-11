@@ -2,9 +2,8 @@ sap.ui.define([
     "core/generic/genericlistviewproperties",
     "sap/ui/model/json/JSONModel",
     "sap/m/Table",
-    "stoneman/modone/model/formatter",
 ],
-    function (genericlistviewproperties, JSONModel, formatter) {
+    function (genericlistviewproperties, JSONModel) {
         "use strict";
 
         return genericlistviewproperties.extend("corebase.genericlistviewfunctions", {

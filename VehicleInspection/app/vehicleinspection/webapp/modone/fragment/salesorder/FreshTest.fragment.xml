@@ -11,7 +11,7 @@
                 <SearchField/>
             </HBox>
             <Table id="idTestTable" mode="MultiSelect" inset="false" items="{
-                path: '/freshTestPinned_One',
+                path: 'EntryFormDataSourceModel>/freshTestPinned_One',
                 sorter: [{ path: 'pinned', descending: true }],
                 groupHeaderFactory: '.getGroupHeader'
                  }">
@@ -38,13 +38,13 @@
                     
                         <cells>
                         <!-- Title -->
-                            <ObjectIdentifier title="{title}" />
+                            <ObjectIdentifier title="{EntryFormDataSourceModel>title}" />
 
                             <!-- Description -->
-                            <Text text="{desc}" />
+                            <Text text="{EntryFormDataSourceModel>desc}" />
 
                             <!-- Info -->
-                            <ObjectNumber number="{info}" />
+                            <ObjectNumber number="{EntryFormDataSourceModel>info}" />
                         </cells>
                     </ColumnListItem>
                 </items>

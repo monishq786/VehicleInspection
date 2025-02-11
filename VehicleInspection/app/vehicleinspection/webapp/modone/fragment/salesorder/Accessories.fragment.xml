@@ -6,7 +6,7 @@
         <!-- First Column -->
         <VBox width="100%">
             <Table id="idAccessTable" mode="MultiSelect" inset="false" items="{
-                path: '/AccessPinned_One',
+                path: 'EntryFormDataSourceModel>/AccessPinned_One',
                 sorter: [{ path: 'pinned', descending: true }],
                 groupHeaderFactory: '.getGroupHeader'
                  }">
@@ -36,15 +36,15 @@
 
                         <cells>
                             <!-- Title -->
-                            <Text text="{accesNo}" />
+                            <Text text="{EntryFormDataSourceModel>accesNo}" />
                             
-                            <ObjectIdentifier title="{title}" />
+                            <ObjectIdentifier title="{EntryFormDataSourceModel>title}" />
 
                             <!-- Description -->
-                            <Text text="{desc}" />
+                            <Text text="{EntryFormDataSourceModel>desc}" />
 
                             <!-- Info -->
-                            <ObjectNumber number="{info}" />
+                            <ObjectNumber number="{EntryFormDataSourceModel>info}" />
                         </cells>
                     </ColumnListItem>
                 </items>
