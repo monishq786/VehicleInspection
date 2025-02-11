@@ -6,7 +6,6 @@ sap.ui.define([
 
 	return genericentryform.extend("modonecontroller.SalesOrder", {
 		constructor: function () {
-			this.irowIndex = 0;
 		},
 
 		onInit: async function () {
