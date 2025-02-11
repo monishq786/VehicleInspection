@@ -57,12 +57,19 @@
     }
   },
   "sap.ui5": {
-    "flexEnabled": true,
+    "flexEnabled": false,
     "dependencies": {
       "minUI5Version": "1.132.1",
       "libs": {
         "sap.m": {},
-        "sap.ui.core": {}
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {},
+        "sap.uxap": {}
       }
     },
     "contentDensities": {
@@ -110,9 +117,280 @@
           "target": [
             "TargetView1"
           ]
+        },
+        {
+          "name": "RouteEmpMaster",
+          "pattern": "RouteEmpMaster",
+          "target": [
+            "TargetEmpMaster"
+          ]
+        },
+        {
+          "name": "RouteUserMaster",
+          "pattern": "RouteUserMaster",
+          "target": [
+            "TargetUserMaster"
+          ]
+        },
+        {
+          "name": "RouteDeptMaster",
+          "pattern": "RouteDeptMaster",
+          "target": [
+            "TargetDeptMaster"
+          ]
+        },
+        {
+          "name": "RouteDashBoard",
+          "pattern": "RouteDashBoard",
+          "target": [
+            "TargetDashBoard"
+          ]
+        },
+        {
+          "name": "RouteHome",
+          "pattern": "RouteHome",
+          "target": [
+            "TargetHome"
+          ]
+        },
+        {
+          "name": "RouteDeptMasterAddEdit",
+          "pattern": "RouteDeptMasterAddEdit/{id}/{screenType}",
+          "target": [
+            "TargetDeptMasterAddEdit"
+          ]
+        },
+        {
+          "name": "RouteEmpMasterAddEdit",
+          "pattern": "RouteEmpMasterAddEdit/{id}/{screenType}",
+          "target": [
+            "TargetEmpMasterAddEdit"
+          ]
+        },
+        {
+          "name": "RouteUserMasterAddEdit",
+          "pattern": "RouteUserMasterAddEdit/{id}/{screenType}",
+          "target": [
+            "TargetUserMasterAddEdit"
+          ]
+        },
+        {
+          "name": "RouteLanding",
+          "pattern": "RouteLanding",
+          "target": [
+            "TargetLanding"
+          ]
+        },
+        {
+          "name": "RouteLogin",
+          "pattern": "",
+          "target": [
+            "TargetLogin"
+          ]
+        },
+        {
+          "name": "RouteADMobility",
+          "pattern": "RouteADMobility",
+          "target": [
+            "TargetADMobility"
+          ]
+        },
+        {
+          "name": "RouteCamera",
+          "pattern": "RouteCamera",
+          "target": [
+            "TargetCamera"
+          ]
+        },
+        {
+          "name": "RouteServiceTest",
+          "pattern": "RouteServiceTest",
+          "target": [
+            "TargetServiceTest"
+          ]
+        },
+        {
+          "name": "RouteCustomerCreate",
+          "pattern": "RouteCustomerCreate",
+          "target": [
+            "TargetCustomerCreate"
+          ]
+        },
+        {
+          "name": "RouteSalesOrder",
+          "pattern": "RouteSalesOrder",
+          "target": [
+            "TargetSalesOrder"
+          ]
+        },
+        {
+          "name": "RouteOpenService",
+          "pattern": "RouteOpenService",
+          "target": [
+            "TargetOpenService"
+          ]
+        },
+        {
+          "name": "RouteChangeVehicleInfo",
+          "pattern": "RouteChangeVehicleInfo",
+          "target": [
+            "TargetRouteChangeVehicleInfo"
+          ]
+        },
+        {
+          "name": "RouteSalesOrderPayment",
+          "pattern": "RouteSalesOrderPayment",
+          "target": [
+            "TargetRouteSalesOrderPayment"
+          ]
         }
       ],
       "targets": {
+        "TargetEmpMasterAddEdit": {
+          "viewId": "employeeMasterAddEdit",
+          "viewName": "employeeMasterAddEdit",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetUserMasterAddEdit": {
+          "viewId": "userAddEdit",
+          "viewName": "userAddEdit",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetDeptMasterAddEdit": {
+          "viewId": "deptMasterAddEdit",
+          "viewName": "deptMasterAddEdit",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetEmpMaster": {
+          "viewId": "employeeMasterList",
+          "viewName": "employeeMasterList",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetUserMaster": {
+          "viewId": "userListView",
+          "viewName": "userListView",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetDeptMaster": {
+          "viewId": "deptListView",
+          "viewName": "deptListView",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetLanding": {
+          "viewId": "landing",
+          "viewName": "landing",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "landingview"
+          
+        },
+        "TargetLogin": {
+          "viewId": "login",
+          "viewName": "login",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "loginview"
+        },
+        "TargetDashBoard": {
+          "viewId": "dashboard",
+          "viewName": "dashboard",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetADMobility": {
+          "viewId": "admobility",
+          "viewName": "admobility",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetCamera": {
+          "viewId": "cameraimage",
+          "viewName": "cameraimage",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetHome": {
+          "viewId": "home",
+          "viewName": "home",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetServiceTest": {
+          "viewId": "serviceTest",
+          "viewName": "serviceTest",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetCustomerCreate": {
+          "viewId": "customercreate",
+          "viewName": "customercreate",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetSalesOrder": {
+          "viewId": "salesorder",
+          "viewName": "salesorder",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetOpenService": {
+          "viewId": "openservicerequest",
+          "viewName": "openservicerequest",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetRouteChangeVehicleInfo": {
+          "viewId": "changevehicleinfo",
+          "viewName": "changevehicleinfo",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetRouteSalesOrderPayment": {
+          "viewId": "salesorderpayment",
+          "viewName": "salesorderpayment",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
         "TargetView1": {
           "id": "View1",
           "name": "View1"

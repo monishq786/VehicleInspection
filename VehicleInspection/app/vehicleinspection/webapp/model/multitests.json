@@ -1,0 +1,114 @@
+{
+    "freshTestPinned_One": [
+        {
+            "title": "New Registration Fresh-Test ",
+            "desc": "تسجيل جديد اختبار جديد",
+            "info": "150 AED",
+            "pinned": true
+        },
+        {
+            "title": "Re-New Fresh-Test",
+            "desc": "إعادة اختبار جديد",
+            "info": "450 AED",
+            "pinned": true
+        },
+        {
+            "title": "Smoke Test",
+            "desc": "اختبار الدخان",
+            "info": "15 AED",
+            "pinned": false
+        },
+        {
+            "title": "Tire Fresh-Test",
+            "desc": "اختبار الإطارات الطازجة",
+            "info": "25 AED",
+            "pinned": false
+        }
+    ],
+    
+    "AccessPinned_One": [
+        {
+            "title": "Break",
+            "accesNo": "27000190",
+            "desc": "استراحة",
+            "info": "10 AED",
+            "pinned": true
+        },
+        {
+            "title": "Mirror",
+            "accesNo": "27000180",
+            "desc": "مرآة",
+            "info": "40.10 AED",
+            "pinned": true
+        },
+        {
+            "title": "Tire",
+            "accesNo": "27000160",
+            "desc": "صور",
+            "info": "10.80 AED",
+            "pinned": false
+        },
+        {
+            "title": "Car Cleaner Box",
+            "accesNo": "27000140",
+            "desc": "صندوق منظف السيارة",
+            "info": "40.50 AED",
+            "pinned": false
+        }
+    ],
+    "Permits": [
+        {
+            "title": "Re-Print",
+            "permitNo": "1000121",
+            "desc": "إعادة الطباعة",
+            "info": "10 AED",
+            "pinned": true
+        },
+        {
+            "title": "Change Color",
+            "permitNo": "1000122",
+            "desc": "تغيير اللون",
+            "info": "140 AED",
+            "pinned": false
+        },
+        {
+            "title": "Change Chassis",
+            "permitNo": "1000123",
+            "desc": "تغيير الهيكل",
+            "info": "34 AED",
+            "pinned": false
+        }
+    ],
+    "ReTest": [
+        {
+            "title": "Smoke Test",
+            "ReTestNo": "278000012",
+            "desc": "اختبار الدخان",
+            "info": "10.50 AED",
+            "pinned": true
+        },
+        {
+            "title": "Re-Print",
+            "ReTestNo": "278000034",
+            "desc": "إعادة الطباعة",
+            "info": "40 AED",
+            "pinned": false
+        }
+    ],
+    "soPayment": [
+        {
+            "title": "New Registration Fresh-Test ",
+            "desc": "تسجيل جديد اختبار جديد",
+            "info": "150 AED",
+            "pinned": true,
+            "selected": true
+        },
+        {
+            "title": "Re-New Fresh-Test",
+            "desc": "إعادة اختبار جديد",
+            "info": "450 AED",
+            "pinned": true,
+            "selected": true
+        }
+    ]
+}

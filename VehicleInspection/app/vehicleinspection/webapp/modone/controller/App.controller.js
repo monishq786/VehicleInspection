@@ -2,8 +2,8 @@ sap.ui.define([
   "sap/ui/core/mvc/Controller"
 ], (Controller) => {
   "use strict";
-``
-  return Controller.extend("adnoc.vi.vehicleinspection.controller.App", {
+
+  return Controller.extend("project1.controller.App", {
     onInit() {
       let oRouter = sap.ui.core.UIComponent.getRouterFor(this);
       oRouter.attachRouteMatched(this.onRouteMatched, this);
