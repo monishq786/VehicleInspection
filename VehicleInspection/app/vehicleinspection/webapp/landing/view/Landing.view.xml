@@ -1,4 +1,4 @@
-<mvc:View controllerName="landingcontroller.landing"
+<mvc:View controllerName="landingcontroller.Landing"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:f="sap.f"

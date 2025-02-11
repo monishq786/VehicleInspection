@@ -1,4 +1,4 @@
-<mvc:View xmlns:form="sap.ui.layout.form" controllerName="logincontroller.login"
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="logincontroller.Login"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:core="sap.ui.core" displayBlock="true" height="100%"

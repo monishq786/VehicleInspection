@@ -4,10 +4,10 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 ], (Controller,JSONModel,MessageToast) => {
     "user strict"
 
-    return Controller.extend("modonecontroller.salesorder", {
+    return Controller.extend("modonecontroller.SalesOrder", {
         onInit() {
             var oPath = jQuery.sap.getModulePath(
-                "project1",
+                "vehicleinspection",
                 "/model/multitests.json",
             );
             var oModel = new sap.ui.model.json.JSONModel(oPath);

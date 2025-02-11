@@ -1,4 +1,4 @@
-<mvc:View controllerName="modonecontroller.customercreate"
+<mvc:View controllerName="modonecontroller.CustomerCreation"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
     xmlns:f="sap.ui.layout.form"
@@ -8,18 +8,14 @@
     xmlns:layout="sap.ui.layout"
     xmlns="sap.uxap">
 
-     <m:Page id="useref" title="Customer and Vehicle Creation" showNavButton="true" navButtonPress="backToLanding">
-        <!-- <m:headerContent>
-            <m:Label text="{view>/myName}" class="lblText boldTxt" />
-            <m:Button icon="sap-icon://log" press=".onPressLogout" />
-        </m:headerContent> -->
+    <m:Page id="useref" title="Customer and Vehicle Creation" showNavButton="true" navButtonPress="backToLanding">
 
         <ObjectPageLayout upperCaseAnchorBar="false">
             <sections>
                 <ObjectPageSection titleUppercase="false" title="Customer">
                     <ObjectPageSubSection title="Customer" titleUppercase="false">
                         <m:VBox id="customerSection" class="section">
-                            <core:Fragment fragmentName="modonefragment.vehicalinspection.customer" type="XML">
+                            <core:Fragment fragmentName="modonefragment.vehicleinspection.Customer" type="XML">
                             </core:Fragment>
                         </m:VBox>
                     </ObjectPageSubSection>
@@ -28,12 +24,12 @@
                 <ObjectPageSection titleUppercase="false" title="Vehicle">
                     <ObjectPageSubSection title="Vehicle" titleUppercase="false">
                         <m:VBox id="Sectvehicalion" class="section">
-                            <core:Fragment fragmentName="modonefragment.vehicalinspection.vehical" type="XML">
+                            <core:Fragment fragmentName="modonefragment.vehicleinspection.Vehicle" type="XML">
                             </core:Fragment>
                         </m:VBox>
                     </ObjectPageSubSection>
                 </ObjectPageSection>
-                
+
 
             </sections>
         </ObjectPageLayout>

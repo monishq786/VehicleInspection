@@ -6,7 +6,7 @@
     xmlns:forms="sap.ui.layout.form"
     xmlns:p13n="sap.m.p13n"
     xmlns:ce="sap.ui.codeeditor"
-    xmlns:core="sap.ui.core" controllerName="modonecontroller.salesorderpayment" height="100%">
+    xmlns:core="sap.ui.core" controllerName="modonecontroller.SalesOrderPayment" height="100%">
 
     <Page id="salesOrderPaymentPage" title="{i18n>salesorder}" showNavButton="true" navButtonPress="backToLanding">
 

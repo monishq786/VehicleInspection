@@ -1,4 +1,4 @@
-<mvc:View controllerName="modonecontroller.changevehicleinfo"
+<mvc:View controllerName="modonecontroller.ChangeVehicleInfo"
     xmlns:l="sap.ui.layout"
     xmlns:f="sap.ui.layout.form"
     xmlns:mvc="sap.ui.core.mvc"

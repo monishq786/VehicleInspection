@@ -6,7 +6,7 @@
     xmlns:forms="sap.ui.layout.form"
     xmlns:p13n="sap.m.p13n"
     xmlns:ce="sap.ui.codeeditor"
-    xmlns:core="sap.ui.core" controllerName="modonecontroller.salesorder" height="100%">
+    xmlns:core="sap.ui.core" controllerName="modonecontroller.SalesOrder" height="100%">
 
     <Page id="salesOrderPage" title="{i18n>salesorder}" showNavButton="true" navButtonPress="backToLanding">
 
@@ -167,7 +167,7 @@
                 <uxap:ObjectPageSection titleUppercase="false" title="Fresh Test">
                     <uxap:subSections>
                         <uxap:ObjectPageSubSection titleUppercase="false">
-                            <core:Fragment fragmentName="modonefragment.salesorder.freshtest" type="XML">
+                            <core:Fragment fragmentName="modonefragment.salesorder.FreshTest" type="XML">
                             </core:Fragment>
                         </uxap:ObjectPageSubSection>
                     </uxap:subSections>
@@ -176,7 +176,7 @@
                 <uxap:ObjectPageSection titleUppercase="false" title="Accessories">
                     <uxap:subSections>
                         <uxap:ObjectPageSubSection titleUppercase="false">
-                            <core:Fragment fragmentName="modonefragment.salesorder.accessories" type="XML">
+                            <core:Fragment fragmentName="modonefragment.salesorder.Accessories" type="XML">
                             </core:Fragment>
                         </uxap:ObjectPageSubSection>
                     </uxap:subSections>
@@ -185,7 +185,7 @@
                 <uxap:ObjectPageSection titleUppercase="false" title="Permits">
                     <uxap:subSections>
                         <uxap:ObjectPageSubSection titleUppercase="false">
-                            <core:Fragment fragmentName="modonefragment.salesorder.permits" type="XML">
+                            <core:Fragment fragmentName="modonefragment.salesorder.Permits" type="XML">
                             </core:Fragment>
                         </uxap:ObjectPageSubSection>
                     </uxap:subSections>
@@ -194,7 +194,7 @@
                 <uxap:ObjectPageSection titleUppercase="false" title="Re-test">
                     <uxap:subSections>
                         <uxap:ObjectPageSubSection titleUppercase="false">
-                            <core:Fragment fragmentName="modonefragment.salesorder.retest" type="XML">
+                            <core:Fragment fragmentName="modonefragment.salesorder.Retest" type="XML">
                             </core:Fragment>
                         </uxap:ObjectPageSubSection>
                     </uxap:subSections>

@@ -1,4 +1,4 @@
-<mvc:View controllerName="modonecontroller.openservicerequest"
+<mvc:View controllerName="modonecontroller.OpenServiceRequest"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:grid="sap.ui.layout.cssgrid"

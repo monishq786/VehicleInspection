@@ -3,7 +3,7 @@ sap.ui.define([
     "sap/ui/core/mvc/Controller",
 ], function (JSONModel, Controller) {
     'use strict';
-    return Controller.extend('landingcontroller.landing', {
+    return Controller.extend('landingcontroller.Landing', {
         onInit: function () {
         },
         onBeforeShow: function () {
@@ -88,7 +88,7 @@ sap.ui.define([
 
         onPressCamera: function () {
             const oRouter = this.getOwnerComponent().getRouter();
-            oRouter.navTo("RouteCamera", {}, true);
+            oRouter.navTo("RouteCameraRecognition", {}, true);
         },
         onPressOpenService: function () {
             const oRouter = this.getOwnerComponent().getRouter();

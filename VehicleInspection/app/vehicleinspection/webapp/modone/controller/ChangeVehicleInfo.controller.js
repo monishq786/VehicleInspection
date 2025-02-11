@@ -4,7 +4,7 @@ sap.ui.define([
 ], (Controller, JSONModel) => {
     "use strict";
 
-    return Controller.extend("modonecontroller.changevehicleinfo", {
+    return Controller.extend("modonecontroller.ChangeVehicleInfo", {
         onInit() {
 
             var oData = {

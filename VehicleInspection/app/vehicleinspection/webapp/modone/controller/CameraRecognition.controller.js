@@ -5,7 +5,7 @@ sap.ui.define([
 
     "use strict";
 
-    return Controller.extend("modonecontroller.cameraimage", {
+    return Controller.extend("modonecontroller.CameraRecognition", {
         stream: null,
         onInit() {
         },

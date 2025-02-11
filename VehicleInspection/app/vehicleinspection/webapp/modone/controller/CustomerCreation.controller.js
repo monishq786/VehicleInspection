@@ -1,7 +1,7 @@
 sap.ui.define(["sap/ui/core/mvc/Controller"], (Controller) => {
     "user strict"
 
-    return Controller.extend("modonecontroller.customercreate", {
+    return Controller.extend("modonecontroller.CustomerCreation", {
         onInit() {
 
         },

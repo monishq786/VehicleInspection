@@ -4,7 +4,7 @@ sap.ui.define([
 ], function (JSONModel, Controller) {
     'use strict';
 
-    return Controller.extend('logincontroller.login', {
+    return Controller.extend('logincontroller.Login', {
         onInit: function () {
             // var oImage = new sap.m.Image({
             //     src: "./images/bg.jpg",

@@ -1,4 +1,4 @@
-<mvc:View xmlns:tnt="sap.tnt" controllerName="modonecontroller.admobility"
+<mvc:View xmlns:tnt="sap.tnt" controllerName="modonecontroller.ADMobility"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:core="sap.ui.core"
 	xmlns="sap.m"
