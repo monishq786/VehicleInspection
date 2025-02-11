@@ -19,7 +19,7 @@
                 <ObjectPageSection titleUppercase="false" title="Customer">
                     <ObjectPageSubSection title="Customer" titleUppercase="false">
                         <m:VBox id="customerSection" class="section">
-                            <core:Fragment fragmentName="project1.fragment.vehicalinspection.customer" type="XML">
+                            <core:Fragment fragmentName="modonefragment.vehicalinspection.customer" type="XML">
                             </core:Fragment>
                         </m:VBox>
                     </ObjectPageSubSection>
@@ -28,7 +28,7 @@
                 <ObjectPageSection titleUppercase="false" title="Vehicle">
                     <ObjectPageSubSection title="Vehicle" titleUppercase="false">
                         <m:VBox id="Sectvehicalion" class="section">
-                            <core:Fragment fragmentName="project1.fragment.vehicalinspection.vehical" type="XML">
+                            <core:Fragment fragmentName="modonefragment.vehicalinspection.vehical" type="XML">
                             </core:Fragment>
                         </m:VBox>
                     </ObjectPageSubSection>
