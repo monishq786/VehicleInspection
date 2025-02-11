@@ -34,7 +34,6 @@ sap.ui.define([
 
 			let oModel = new sap.ui.model.json.JSONModel();
 			oModel.loadData("/modone/model/multitests.json");
-			
 			this.getView().setModel(oModel, this.getEntryFormDataSourceModelName());
 		},
 		
