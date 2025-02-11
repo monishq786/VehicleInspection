@@ -24,21 +24,8 @@
           "odataVersion": "4.0"
         }
       }
-    },
-    "crossNavigation": {
-      "inbounds": {
-        "VehicleInspection-display": {
-          "semanticObject": "VehicleInspection",
-          "action": "display",
-          "title": "{{flpTitle}}",
-          "subTitle": "{{flpSubtitle}}",
-          "signature": {
-            "parameters": {},
-            "additionalParameters": "allowed"
-          }
-        }
-      }
     }
+    
   },
   "sap.ui": {
     "technology": "UI5",

@@ -6,12 +6,10 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 
     return Controller.extend("modonecontroller.SalesOrder", {
         onInit() {
-            var oPath = jQuery.sap.getModulePath(
-                "vehicleinspection",
-                "/model/multitests.json",
-            );
-            var oModel = new sap.ui.model.json.JSONModel(oPath);
-            this.getView().setModel(oModel);
+			var oModel = new sap.ui.model.json.JSONModel();
+			oModel.loadData("model/multitests.json");
+			this.getView().setModel(oModel);
+			
             
             this._oCurrentP13nData = null;
 		},
