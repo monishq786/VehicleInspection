@@ -211,7 +211,7 @@
             </Toolbar>
         </footer>
 
-        <p13n:Popup id="p13nPopup" title="Select a Payment Modes" close="onClose" warningText="Are you sure?">
+        <p13n:Popup id="p13nPopup" title="Select a Payment Modes" close="onBtnPressClose" warningText="Are you sure?">
             <p13n:panels>
                 <p13n:SelectionPanel id="columnsPanel" title="Modes" enableCount="false" showHeader="false" />
 
