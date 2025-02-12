@@ -15,7 +15,7 @@
                 <ObjectPageSection titleUppercase="false" title="Customer">
                     <ObjectPageSubSection title="Customer" titleUppercase="false">
                         <m:VBox id="customerSection" class="section">
-                            <core:Fragment fragmentName="modonefragment.vehicleinspection.Customer" type="XML">
+                            <core:Fragment fragmentName="modonefragment.customervendorcreation.Customer" type="XML">
                             </core:Fragment>
                         </m:VBox>
                     </ObjectPageSubSection>
@@ -24,7 +24,7 @@
                 <ObjectPageSection titleUppercase="false" title="Vehicle">
                     <ObjectPageSubSection title="Vehicle" titleUppercase="false">
                         <m:VBox id="Sectvehicalion" class="section">
-                            <core:Fragment fragmentName="modonefragment.vehicleinspection.Vehicle" type="XML">
+                            <core:Fragment fragmentName="modonefragment.customervendorcreation.Vehicle" type="XML">
                             </core:Fragment>
                         </m:VBox>
                     </ObjectPageSubSection>
