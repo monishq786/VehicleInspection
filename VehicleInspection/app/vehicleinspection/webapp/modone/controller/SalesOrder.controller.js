@@ -5,7 +5,7 @@ sap.ui.define([
 	"user strict"
 
 	return genericentryform.extend("modonecontroller.SalesOrder", {
-		
+
 		constructor: function () {
 
 		},
@@ -13,7 +13,7 @@ sap.ui.define([
 		onInit: async function () {
 
 			genericentryform.prototype.onInit.apply(this, arguments);
-
+			
 		},
 
 		onBeforeShow: async function (oEvent) {
