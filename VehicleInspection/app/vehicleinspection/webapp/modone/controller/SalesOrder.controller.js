@@ -33,7 +33,7 @@ sap.ui.define([
 			this.setEntryFormDataSourceURLToUpdateData('');
 
 			let oModel = new sap.ui.model.json.JSONModel();
-			oModel.loadData("/modone/model/multitests.json");
+			oModel.loadData("/modone/model/SalesOrderModel.json");
 			this.getView().setModel(oModel, this.getEntryFormDataSourceModelName());
 		},
 		
@@ -44,7 +44,7 @@ sap.ui.define([
 		getFullWidth: function () {
 			return new sap.m.FlexItemData({ growFactor: 1 });
 		},
-		onExitPress: function () {
+		onBtnPressExit: function () {
 			const oRouter = this.getOwnerComponent().getRouter();
 			oRouter.navTo("RouteADMobility", {}, true);
 		},
@@ -80,7 +80,7 @@ sap.ui.define([
 
 		},
 
-		onPaymentDialogOpen: function (oEvt) {
+		onBtnPressPaymentDialog: function (oEvt) {
 			const oView = this.getView();
 			const oPopup = oView.byId("p13nPopup");
 			if (!this._bIsOpen) {

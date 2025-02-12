@@ -206,8 +206,8 @@
         <footer>
             <Toolbar design="Transparent">
                 <ToolbarSpacer/>
-                <Button type="Emphasized" text="Processed to Payment" press="onPaymentDialogOpen"/>
-                <Button type="Emphasized" text="{i18n>exit}" press="onExitPress"/>
+                <Button type="Emphasized" text="{i18n>paymentProcess}" press="onBtnPressPaymentDialog"/>
+                <Button type="Emphasized" text="{i18n>exit}" press="onBtnPressExit"/>
             </Toolbar>
         </footer>
 
