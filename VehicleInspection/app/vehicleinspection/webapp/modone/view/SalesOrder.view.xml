@@ -206,6 +206,8 @@
         <footer>
             <Toolbar design="Transparent">
                 <ToolbarSpacer/>
+                <Button type="Emphasized" text="{i18n>ESMA}" press="onBtnPressESMA"/>
+                <Button type="Emphasized" text="{i18n>Visual}" press="onBtnPressPaymentDialog"/>
                 <Button type="Emphasized" text="{i18n>paymentProcess}" press="onBtnPressPaymentDialog"/>
                 <Button type="Emphasized" text="{i18n>exit}" press="onBtnPressExit"/>
             </Toolbar>

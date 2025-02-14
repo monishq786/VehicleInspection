@@ -756,12 +756,15 @@ sap.ui.define(
 
       getApiResponseObject: function () {
         return this.pApiResponseObject;
-      }
+      },
       /*
       setEntryFormResponseDataSourceModelName: function (value) {
           this.pEntryFormResponseDataSourceModelName = value;
       },
       */
+      getCflMultiSelect: function () {
+        return this.pCflConfig;
+      },
     });
   }
 );
