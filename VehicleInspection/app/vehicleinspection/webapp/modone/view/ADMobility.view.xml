@@ -295,7 +295,7 @@
 				<f1:Card class="sapUiMediumMargin" width="300px" height="auto">
 					<f1:header>
 
-						<card:Header title="Customer Details" iconSrc="https://ui5.sap.com/test-resources/sap/ui/integration/demokit/sample/CardsLayout/images/Avatar_1.png" />
+						<card:Header class="sapContent_BadgeBackground" title="Customer Details" iconSrc="https://ui5.sap.com/test-resources/sap/ui/integration/demokit/sample/CardsLayout/images/Avatar_1.png" />
 
 					</f1:header>
 
