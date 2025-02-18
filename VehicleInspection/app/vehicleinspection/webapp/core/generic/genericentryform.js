@@ -42,7 +42,8 @@ sap.ui.define([
             onPressOfEntryFormSaveButton: async function (oReqData) {
                // alert("save");
 
-                let sFormMode = this.getFormMode();
+                // let sFormMode = this.getFormMode();
+                let sFormMode = "3"     // for testing
                 let sEntryFormSaveURL = "";
                 let sType = "POST"
 

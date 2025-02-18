@@ -2,12 +2,13 @@ namespace Adnoc.VehicleInsp;
 
 
 entity ZSD_T_Customer{
-  key ID : Integer;
+  key ID : UUID;
   FirstName : String(40);
   LastName : String(40);
   SearchTerm :String(20);
   EmiratesId : Integer;
   MobileNumber : String(10);
+  EmailId:String(50);
   Address : String(60);
   Emirates : String(20);
   City : String(20);
@@ -22,7 +23,7 @@ entity ZSD_T_Customer{
 
 
 entity ZSD_T_VEHICLE {
-  key VehicleGUID : String;
+  key VehicleGUID : UUID;
   PlateNumber: String(10);
   PlateSourceCode:Int32;
   PlateSource : String(10);

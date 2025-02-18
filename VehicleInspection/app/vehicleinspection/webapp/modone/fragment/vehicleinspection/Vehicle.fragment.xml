@@ -6,26 +6,26 @@
         <f:content>
             <core:Title text="" />
             <Label text="Plate No" />
-            <Input value="{plateNo}" type="Text" />
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/plateNo}" type="Text" />
             <Label text="Chassis No" />
-            <Input value="{Chasis}" type="Text" />
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/PlateSourceCode}" type="Text" />
             <Label text="Engine No" />
-            <Input value="{Engineno}" type="Text" />
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/PlateSource}" type="Text" />
             <Label text="Manufacturer" />
-            <Input value="{Manufacturer}" type="Text" />
-            <Label text="Model" />
-            <Input value="{Model}" type="Text" />
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/PlateColourCode}" type="Text" />
+            <Label text="Plate Colour" />
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/PlateColour}" type="Text" />
             <Label text="Plate Type" />
-            <Input value="{paletype}" type="Text" />
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/PlateType}" type="Text" />
             <Label text="Kind" />
-            <Input value="{Kind}" type="Text" />
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/PlateKind}" type="Text" />
             <Label text="Type" />
-            <Input value="{paletype}" type="Text" />
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/PlateTypeCode}" type="Text" />
 
             <core:Title text="" />
             <Label text="Steering Side/ Weight Kind" />
-            <Input value="{Street}" />
-            <Input value="{HouseNumber}">
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/SteeringSide}" />
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/WeightCode}">
                 <layoutData>
                     <l:GridData span="XL4 L4 M6 S4" />
                 </layoutData>
@@ -36,44 +36,43 @@
             <DatePicker id="DP4" displayFormat="short" change="handleChange"/>
             <Label text="Mfg. Year/Mileage" />
             <DatePicker id="DP5" displayFormat="short" change="handleChange"/>
-            <!-- <Input value="{Street}" /> -->
-
+            
             <Input value="{HouseNumber}">
                 <layoutData>
                     <l:GridData span="XL4 L4 M6 S4" />
                 </layoutData>
             </Input>
             <Label text="Horse Power / No. of Axles" />
-            <Input value="{Street}" />
-            <Input value="{HouseNumber}">
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/HorsePower}" />
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/NumberOfAxel}">
                 <layoutData>
                     <l:GridData span="XL4 L4 M6 S4" />
                 </layoutData>
             </Input>
             <Label text="No. of Cylinders/Wheels" />
-            <Input value="{Street}" />
-            <Input value="{HouseNumber}">
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/NumberOfCylinders}" />
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/NumberOfWheels}">
                 <layoutData>
                     <l:GridData span="XL4 L4 M6 S4" />
                 </layoutData>
             </Input>
             <Label text="No. of Doors/Passenger" />
-            <Input value="{Street}" />
-            <Input value="{HouseNumber}">
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/NumberOfDoors}" />
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/NoOfPassenger}">
                 <layoutData>
                     <l:GridData span="XL4 L4 M6 S4" />
                 </layoutData>
             </Input>
             <Label text="Empty/Full Weight" />
-            <Input value="{Street}" />
-            <Input value="{HouseNumber}">
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/EmptyWeight}" />
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/FullWeight}">
                 <layoutData>
                     <l:GridData span="XL4 L4 M6 S4" />
                 </layoutData>
             </Input>
             <Label text="Cubic Capacity" />
-            <Input value="{Street}" />
-            <Input value="{HouseNumber}">
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/CubicCapCity}" />
+            <Input value="{EntryFormDataSourceModel>/VEHICLE/CubicCapCity}">
                 <layoutData>
                     <l:GridData span="XL4 L4 M6 S4" />
                 </layoutData>
