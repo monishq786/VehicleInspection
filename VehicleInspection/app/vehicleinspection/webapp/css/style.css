@@ -1,1 +1,13 @@
-/* Enter your custom styles here */
+.sapUiSmallMarginEnd {
+    margin-right: 20px !important;
+}
+
+.sapUiSizeCompact .sapMInputBaseInner {
+    padding: 0 0.4rem !important;  
+}
+
+
+.sapUiSizeCompact .sapMInputBase:not(.sapMInputBaseHasEndIcons):not(.sapMInputBaseHasBeginIcons) .sapMInputBaseContentWrapper {
+    min-width: 1.2rem !important; 
+    /* margin-right: 5px; */
+}

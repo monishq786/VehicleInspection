@@ -1,111 +1,105 @@
 namespace Adnoc.VehicleInsp;
 
 
-entity ZSD_T_Customer{
-  key ID : UUID;
-  FirstName : String(40);
-  LastName : String(40);
-  SearchTerm :String(20);
-  EmiratesId : Integer;
-  MobileNumber : String(10);
-  EmailId:String(50);
-  Address : String(60);
-  Emirates : String(20);
-  City : String(20);
-  Country : String(20);
-  Reference : String(20);
-  VEHICLE       : Composition of one ZSD_T_VEHICLE
-                                  on VEHICLE.Customer_v = $self;
+using {  managed} from '@sap/cds/common';
 
+
+
+entity CustomerMasters : managed {
+    key customersUUID  : UUID;
+        customerNo     : Integer64;
+        emiratesId     : String(100);
+        firstName      : String(100);
+        lastName       : String(100);
+        mobileNo       : String(100);
+        region         : String(100);
+        BPGrouping     : String(100);
+        extReference   : String(100);
+        emailAddress   : String(100);
+        vehicleMasters : Composition of many VehicleMasters
+                             on vehicleMasters.customerMasters = $self;
 }
-
-
-
-
-entity ZSD_T_VEHICLE {
-  key VehicleGUID : UUID;
-  PlateNumber: String(10);
-  PlateSourceCode:Int32;
-  PlateSource : String(10);
-  PlateSourceArabic :String(10);
-  PlateColourCode : String(10);
-  PlateColour : String(10);
-  PlateColourArabic: String(10);
-  PlateKindCode: Integer;
-  PlateKind: String(10);
-  PlateKindArabic : String(10);
-  PlateTypeCode: Int32;
-  PlateType :String(10);
-  PlateTypeArabic : String(10);
-  KindCode : Int32;
-  Kind : String(15);
-  KindArabic: String(15);
-  ChassisNumber: String(30);
-  EngineNo: String(30);
-  PrimaryVIN: String(30);
-  SecondaryVIN: String(30);
-  CountryCode:String(30);
-  Country: String(10);
-  Manufacturer:String(10);
-  ManufacturerArabic:String(10);
-  Model: String(10);
-  ModelArabic:String(11);
-  RegistrationYear:Int16;
-  TypeCode:Int32;
-  Type:String(20);
-  TypeArabic:String(20);
-  BodyColorCode:Int32;
-  BodyColor:String(30);
-  BodyColourArabic:String(30);
-  GearCode:Int32;
-  GearType:String(10);
-  GearTypeArabic: String(10);
-  FuelCode:Int32;
-  FuelType:String(10);
-  FuelTypeArabic:String(10);
-  SteeringCode:Int32;
-  SteeringSide: String(10);
-  SteeringSideArabic:String(10);
-  WeightCode:Int32;
-  WeightDisc:String(10);
-  WeightDiscArabic:String(10);
-  RegistrationDate:Date;
-  RegistrationExpiryDate:Date;
-  ManufacturingYear:String(10);
-  HorsePower:String(10);
-  NumberOfAxel: String(10);
-  NumberOfCylinders:String(10);
-  NumberOfWheels: String(10);
-  NumberOfDoors: String(10);
-  NoOfPassenger: String(10);
-  EmptyWeight: String(10);
-  FullWeight : String(10);
-  Mileage: String(10);
-  CubicCapCity: String(10);
-  Customer : String(10);
-  CreationDate: Date;
-  CreationTime : Date;
-  CreatedBy : String(20);
-  InsuranceName : String(20);
-  InsuranceExpiry : Date;
-  InsuranceKind : String(10);
-  InsuranceKindArabic : String(10);
-  InsurancePoliceNumber : String(20);
-  MortgageDescription : String(20);
-  MortgageRef : String(20);
-  OwnerTCFNumber : String (20);
-  OwnerTCFArabicName : String(60);
-  OwnerTCFEnglishName : String(60);
-  CustomCertificateNumber : String(20);
-  CustomCertificateDate : Date;
-  CustomCertificateCenterCode : Int32;
-  CustomCertificateCenter : String(20);
-  RegistrationRemark : String(60);
-  NationalityCode : Int32;
-  Nationality : String(20);
-  NationalityArabic : String (20);
-  CustomerReference : String(20);
-  Customer_v: Association to one  ZSD_T_Customer;
-  
-
+ 
+entity VehicleMasters : managed {
+    key vehicleMastersUUID          : UUID;
+        plateNumber                 : String(100);
+        plateSourceCode             : String(100);
+        plateSource                 : String(100);
+        plateSourceArabic           : String(100);
+        plateColorCode              : String(100);
+        plateColor                  : String(100);
+        plateColorArabic            : String(100);
+        plateKindCode               : String(100);
+        plateKind                   : String(100);
+        plateKindArabic             : String(100);
+        plateTypeCode               : String(100);
+        plateType                   : String(100);
+        plateTypeArabic             : String(100);
+        kindCode                    : String(100);
+        kind                        : String(100);
+        kindArabic                  : String(100);
+        chasisNumber                : String(100);
+        engineNumber                : String(100);
+        primaryVin                  : String(100);
+        secondaryVin                : String(100);
+        countryCode                 : String(100);
+        country                     : String(100);
+        manfacturerCode             : String(100);
+        manfacturer                 : String(100);
+        manfacturerArabic           : String(100);
+        modelCode                   : String(100);
+        model                       : String(100);
+        modelArabic                 : String(100);
+        registrationYear            : String(100);
+        typeCode                    : String(100);
+        type                        : String(100);
+        typeArabic                  : String(100);
+        bodyColorCode               : String(100);
+        bodyColor                   : String(100);
+        bodyColorArabic             : String(100);
+        gearCode                    : String(100);
+        gearType                    : String(100);
+        gearTypeArabic              : String(100);
+        fuelCode                    : String(100);
+        fuelType                    : String(100);
+        fuelTypeArabic              : String(100);
+        steeringCode                : String(100);
+        steeringSide                : String(100);
+        steeringSideArabic          : String(100);
+        weightCode                  : String(100);
+        weightDisc                  : String(100);
+        weightDiscArabic            : String(100);
+        registrationDate            : DateTime;
+        registrationExpiryDate      : DateTime;
+        manufacturingYear           : String(100);
+        horsePower                  : String(100);
+        numberOfAxel                : String(100);
+        numberOfWheels              : String(100);
+        numberOfCylinders           : String(100);
+        numberOfDoors               : String(100);
+        numberOfPassengers          : String(100);
+        emptyWeight                 : String(100);
+        fullWeight                  : String(100);
+        mileage                     : String(100);
+        cubicCapacity               : String(100);
+        customer                    : String(100);
+        insuranceName               : String(100);
+        insuranceExpiry             : String(100);
+        insuranceKind               : String(100);
+        insuranceKindArabic         : String(100);
+        insurancePolicyNumber       : String(100);
+        mortgageDescription         : String(100);
+        mortgageReference           : String(100);
+        ownerTcfNumber              : String(100);
+        ownerTcfEnglishName         : String(100);
+        ownerTcfArabicName          : String(100);
+        customCertificateNumber     : String(100);
+        customCertificateDate       : DateTime;
+        customCertificateCenterCode : String(100);
+        customCertificateCenter     : String(100);
+        registrationRemarks         : String(100);
+        nationalityCode             : String(100);
+        nationality                 : String(100);
+        nationalityArabic           : String(100);
+        customerMasters             : Association to one CustomerMasters;
 }

@@ -108,6 +108,9 @@ sap.ui.define([
             }
         },
 
+
+
+    
         onRecognizePlate: function () {
             const capturedImageSrc = this.byId("capturedImage").getSrc();
 
@@ -187,6 +190,10 @@ sap.ui.define([
             oRouter.navTo("RouteLanding", {}, true);
         }
 
+
+
     });
+
+
 
 });

@@ -2,16 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "cds serve",
+      "name": "Test Debugging",
+      "command": "cds watch --profile hybrid",
       "request": "launch",
-      "type": "node",
+      "type": "node-terminal",
       "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "cds",
-      "args": [
-        "serve",
-        "--with-mocks",
-        "--in-memory?"
-      ],
       "skipFiles": [
         "<node_internals>/**"
       ]

@@ -1,47 +1,300 @@
-<mvc:View controllerName="modonecontroller.CustomerCreation"
+<mvc:View
+    controllerName="modonecontroller.CustomerCreation"
+    displayBlock="true"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
     xmlns:f="sap.ui.layout.form"
-    xmlns:m="sap.m"
-    xmlns:u="sap.ui.unified"
-    xmlns:grid="sap.ui.layout.Grid"
-    xmlns:layout="sap.ui.layout"
-    xmlns="sap.uxap">
+    xmlns:core="sap.ui.core"
+>
+    <mvc:content>
+        <ScrollContainer
+            height="100%"
+            width="100%"
+            vertical="true"
+            focusable="true"
+        >
+            <VBox class="sapUiSmallMargin">
+                <f:SimpleForm
+                    id="SimpleFormChange480_Trial"
+                    editable="true"
+                    layout="ResponsiveGridLayout"
+                    title="Address"
+                    labelSpanXL="4"
+                    labelSpanL="4"
+                    labelSpanM="4"
+                    labelSpanS="12"
+                    adjustLabelSpan="false"
+                    emptySpanXL="0"
+                    emptySpanL="0"
+                    emptySpanM="0"
+                    emptySpanS="0"
+                    columnsXL="3"
+                    columnsL="2"
+                    columnsM="2"
+                    singleContainerFullSize="false"
+                >
+                    <f:content>
+                        <core:Title text="Customer Information" />
+                        <Label text="First Name" />
+                        <Input value="" />
+                        <Label text="Last Name" />
+                        <Input value="" />
+                        <Label text="SearchTeam" />
+                        <Input value="" />
+                        <Label text="Emirates ID" />
+                        <Input value="" />
+                        <!-- <Label text="Street/No." />
+				<Input value="{Street}">
+				</Input>
+				<Input value="{HouseNumber}">
+					<layoutData>
+						<l:GridData span="XL2 L3 M3 S4" />
+					</layoutData>
+				</Input> -->
+                        <!-- <Label text="ZIP Code/City" />
+				<Input value="{ZIPCode}">
+					<layoutData>
+						<l:GridData span="XL2 L3 M3 S4" />
+					</layoutData>
+				</Input> -->
+                        <!-- <Input value="{City}" /> -->
+                        <Label text="Mobile No" />
+                        <Input value="" />
+                        <!-- <Select id="country" selectedKey="{Country}">
+					<items>
+						<core:Item text="England" key="England"/>
+						<core:Item text="Germany" key="Germany"/>
+						<core:Item text="USA" key="USA"/>
+					</items>
+				</Select> -->
+                        <core:Title text="" />
+                        <Label text="Email Id" />
+                        <Input value="{Email}" />
+                        <Label text="Emerates" />
+                        <Input value="{Emerates}" />
+                        <Label text="Address" />
+                        <Input
+                            value="{Address}"
+                            type="Email"
+                        />
+                        <Label text="City." />
+                        <Input
+                            value="{City}"
+                            type="Tel"
+                        />
+                        <Label text="Country" />
+                        <Input
+                            value="{Country}"
+                            type="Tel"
+                        />
 
-    <m:Page id="useref" title="Customer and Vehicle Creation" showNavButton="true" navButtonPress="backToLanding">
+                        <core:Title text="Vehicle Information" />
+                        <Label text="Plate No" />
+                        <Input
+                            value="{plateNo}"
+                            type="Email"
+                        />
+                        <Label text="Chasis No" />
+                        <Input
+                            value="{Chasis}"
+                            type="Email"
+                        />
+                        <Label text="Engine No" />
+                        <Input
+                            value="{Engineno}"
+                            type="Email"
+                        />
+                        <Label text="Manufacturer" />
+                        <Input
+                            value="{Manufacturer}"
+                            type="Email"
+                        />
+                        <Label text="Model" />
+                        <Input
+                            value="{Model}"
+                            type="Email"
+                        />
+                        <Label text="Plate Type" />
+                        <Input
+                            value="{paletype}"
+                            type="Email"
+                        />
+                        <Label text="Kind" />
+                        <Input
+                            value="{Kind}"
+                            type="Email"
+                        />
+                        <Label text="Type" />
+                        <Input
+                            value="{paletype}"
+                            type="Email"
+                        />
 
-        <ObjectPageLayout upperCaseAnchorBar="false">
-            <sections>
-                <ObjectPageSection titleUppercase="false" title="Customer">
-                    <ObjectPageSubSection title="Customer" titleUppercase="false">
-                        <m:VBox id="customerSection" class="section">
-                            <core:Fragment fragmentName="modonefragment.vehicleinspection.Customer" type="XML">
-                            </core:Fragment>
-                        </m:VBox>
-                    </ObjectPageSubSection>
-                </ObjectPageSection>
+                        <core:Title text="" />
+                        <Label text="SteeringSide/WeightKind" />
+                        <Input value="{Street}" />
+                        <Input value="{HouseNumber}">
+                            <layoutData>
+                                <l:GridData span="XL4 L4 M6 S4" />
+                            </layoutData>
+                        </Input>
 
-                <ObjectPageSection titleUppercase="false" title="Vehicle">
-                    <ObjectPageSubSection title="Vehicle" titleUppercase="false">
-                        <m:VBox id="Sectvehicalion" class="section">
-                            <core:Fragment fragmentName="modonefragment.vehicleinspection.Vehicle" type="XML">
-                            </core:Fragment>
-                        </m:VBox>
-                    </ObjectPageSubSection>
-                </ObjectPageSection>
+                        <Label text="In It Reg Year/Reg ExpDate" />
+                        <!-- <Input value="{Street}">
+				</Input> -->
+                        <DatePicker
+                            id="DP3"
+                            displayFormat="short"
+                            change="handleChange"
+                            class="sapUiSmallMarginBottom"
+                        />
+                        <DatePicker
+                            id="DP4"
+                            displayFormat="short"
+                            change="handleChange"
+                            class="sapUiSmallMarginBottom"
+                        >
+                            <layoutData>
+                                <l:GridData span="XL4 L4 M6 S4" />
+                            </layoutData>
+                        </DatePicker>
+                        <Label text="MFG Year/Mielage" />
+                        <DatePicker
+                            id="DP5"
+                            displayFormat="short"
+                            change="handleChange"
+                            class="sapUiSmallMarginBottom"
+                        />
+                        <!-- <Input value="{Street}" /> -->
 
+                        <Input value="{HouseNumber}">
+                            <layoutData>
+                                <l:GridData span="XL4 L4 M6 S4" />
+                            </layoutData>
+                        </Input>
+                        <Label text="Horse Power/No.Of.Axies" />
+                        <Input value="{Street}" />
+                        <HBox>
+                            <Button
+                                text="-"
+                                press="onDecrement"
+                            />
+                            <Input
+                                id="quantityInput"
+                                value="{/quantity}"
+                                type="Number"
+                                width="4rem"
+                                textAlign="Center"
+                            />
+                            <Button
+                                text="+"
+                                press="onIncrement"
+                            />
+                        </HBox>
+                        <Label text="No.Of Cylinders/Wheels" />
+                        <!-- <Input
+                            id="quantityInput1"
+                            value="{/quantity}"
+                            type="Number"
+                            width="8rem"
+                            textAlign="Center"
+                        >
+                            <layoutData>
+                                <FlexItemData growFactor="1" />
+                            </layoutData>
+                            <Button
+                                icon="sap-icon://less"
+                                press="onDecrement"
+                                type="Transparent"
+                            />
+                            <Button
+                                icon="sap-icon://add"
+                                press="onIncrement"
+                                type="Transparent"
+                            />
+                        </Input> -->
 
-            </sections>
-        </ObjectPageLayout>
-        <m:footer>
-            <m:Toolbar>
-                <m:ToolbarSpacer />
-                <m:FlexBox justifyContent="End">
-                    <m:Button type="Default" id="cancel" text="Cancel" press="onCancel" />
-                    <m:Button type="Emphasized" id="user_btnSubmit" text="Submit" press="onSaveCustomerCreate" class="sapUiSmallMarginBegin"/>
-                </m:FlexBox>
-            </m:Toolbar>
-        </m:footer>
-    </m:Page>
+                        <HBox alignItems="Center">
+                            <!-- Decrement Button -->
+                            <Button
+                                icon="sap-icon://less"
+                                press="onDecrement"
+                                type="Transparent"
+                            />
 
+                            <!-- Number Input -->
+                            <Input
+                                id="quantityInput3"
+                                value="{/quantity}"
+                                type="Number"
+                                textAlign="Center"
+                                width="4rem"
+                                
+                            />
+
+                            <!-- Increment Button -->
+                            <Button
+                                icon="sap-icon://add"
+                                press="onIncrement"
+                                type="Transparent"
+                            />
+                        </HBox>
+
+                        <!-- <layoutData>
+                                <l:GridData span="XL4 L4 M6 S4" />
+                            </layoutData>
+                        </Input> -->
+                        <Label text="No.Of Doors/Passenger" />
+                        <Input value="{Street}" />
+                        <Input value="{HouseNumber}">
+                            <layoutData>
+                                <l:GridData span="XL4 L4 M6 S4" />
+                            </layoutData>
+                        </Input>
+                        <Label text="Empty/Full Weight" />
+                        <Input value="{Street}" />
+                        <Input value="{HouseNumber}">
+                            <layoutData>
+                                <l:GridData span="XL4 L4 M6 S4" />
+                            </layoutData>
+                        </Input>
+                        <Label text="Cubic CapCity" />
+                        <Input value="{Street}" />
+                        <Input value="{HouseNumber}">
+                            <layoutData>
+                                <l:GridData span="XL4 L4 M6 S4" />
+                            </layoutData>
+                        </Input>
+                        <Label text="HandyCap Vah" />
+                        <CheckBox
+                            text=""
+                            valueState="Information"
+                            enabled="true"
+                            selected="true"
+                        >
+                            <layoutData>
+                                <l:GridData span="XL4 L4 M4 S4" />
+                            </layoutData>
+                        </CheckBox>
+
+                        <Label text="Modify Vah" />
+                        <CheckBox
+                            text=""
+                            valueState="Information"
+                            enabled="true"
+                            selected="true"
+                        >
+                            <layoutData>
+                                <l:GridData span="XL4 L4 M4 S4" />
+                            </layoutData>
+                        </CheckBox>
+
+                        <!-- <Label text="HandyCap Vah" />
+				<CheckBox text="" valueState="Information" enabled="true" selected="true" /> -->
+                    </f:content>
+                </f:SimpleForm>
+            </VBox>
+        </ScrollContainer>
+    </mvc:content>
 </mvc:View>
