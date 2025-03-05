@@ -131,6 +131,23 @@
                         </uxap:subSections>
 
                     </uxap:ObjectPageSection>
+
+                      <uxap:ObjectPageSection titleUppercase="false" id="personalSection123" title="Employee Master" importance="Medium">
+                        
+                        <uxap:subSections>
+                            <uxap:ObjectPageSubSection id="personalSectionSS1123" title="EmployeeMaster" titleUppercase="false">
+                                <uxap:blocks>
+                                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Employee" subheader="" press="onPressChangeEmp" url="https://www.sap.com/">
+                                        <TileContent>
+                                            <ImageContent src="sap-icon://user" />
+                                        </TileContent>
+                                    </GenericTile>
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+
+                        </uxap:subSections>
+
+                    </uxap:ObjectPageSection>
                 </uxap:sections>
             </uxap:ObjectPageLayout>
 

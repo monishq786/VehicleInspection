@@ -97,6 +97,10 @@ sap.ui.define([
         onPressChangeVehicle: function () {
             const oRouter = this.getOwnerComponent().getRouter();
             oRouter.navTo("RouteChangeVehicleInfo", {}, true);
+        },
+        onPressChangeEmp: function () {
+            const oRouter = this.getOwnerComponent().getRouter();
+            oRouter.navTo("RouteEmpListView", {}, true);
         }
 
 

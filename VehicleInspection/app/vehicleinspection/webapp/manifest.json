@@ -174,9 +174,57 @@
           "target": [
             "TargetRouteSalesOrderPayment"
           ]
+        },
+        {
+          "name": "RouteEmpListView",
+          "pattern": "RouteEmpListView",
+          "target": [
+            "TargetRouteEmpListView"
+          ]
+        },
+        {
+          "name": "RouteEmpentryform",
+          "pattern": "RouteEmpentryform",
+          "target": [
+            "TargetRouteEmpEntry"
+          ]
+        },
+        {
+          "name": "RouteEmpEditView",
+          "pattern": "RouteEmpEditView",
+          "target": [
+            "TargetRouteEmpEditView"
+          ]
         }
       ],
       "targets": {
+        "TargetRouteEmp": {
+          "viewId": "EmpListView",
+          "viewName": "EmpListView",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+          
+        },
+        "TargetRouteEmpEntry": {
+          "viewId": "Empentryform",
+          "viewName": "Empentryform",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+          
+        },
+        "TargetRouteEmpEditView": {
+          "viewId": "Muserentryform",
+          "viewName": "Muserentryform",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+          
+        },
         "TargetLanding": {
           "viewId": "Landing",
           "viewName": "Landing",
@@ -256,6 +304,14 @@
         "TargetRouteSalesOrderPayment": {
           "viewId": "SalesOrderPayment",
           "viewName": "SalesOrderPayment",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewPath": "modoneview"
+        },
+        "TargetRouteEmpListView": {
+          "viewId": "EmpListView",
+          "viewName": "EmpListView",
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
