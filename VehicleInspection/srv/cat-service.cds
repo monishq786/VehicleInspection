@@ -1,5 +1,7 @@
-using my.bookshop as my from '../db/schema';
+using {ADD_VI as db} from '../db/schema';
 
 service CatalogService {
-    @readonly entity Books as projection on my.Books;
+     entity Zsd_T_Test_Masters as projection on db.Zsd_T_Test_Masters;
+     entity Zsd_T_Test_Results as projection on db.Zsd_T_Test_Results;
+      entity Employee as projection on db.Employee;
 }
